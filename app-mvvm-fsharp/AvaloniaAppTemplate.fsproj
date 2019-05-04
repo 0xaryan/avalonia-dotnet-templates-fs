@@ -7,16 +7,15 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
     <Compile Include="ViewModels\ViewModelBase.fs" />
     <Compile Include="ViewModels\MainWindowViewModel.fs" />
     <Compile Include="Views\MainWindow.fs" />
-    <Page Include="Views\MainWindow.xaml" />
     <Compile Include="ViewLocator.fs" />
     <Compile Include="App.fs" />
-    <Page Include="App.xaml" />
     <Compile Include="Program.fs" />
     <AvaloniaResource Include="Assets\*" />
-
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +25,7 @@
     <AvaloniaResource Include="**\*.xaml">
       <SubType>Designer</SubType>
     </AvaloniaResource>
+    <Page Include="**\*.xaml" />
   </ItemGroup>
 
   <ItemGroup>
